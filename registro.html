@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Equipo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Nuevo Equipo Pokémon</h1>
+        <a href="index.html">
+            Volver
+        </a>
+    </header>
+
+    <main>
+        <form id="formEquipo">
+            <label>Nombre del equipo</label>
+            <input id="nombreEquipo" required>
+
+            <label>Entrenador</label>
+            <input id="entrenador" required>
+
+            <label>Región</label>
+            <input id="region" required>
+
+            <label>Seleccionar Pokémon</label>
+            <select id="pokemon" multiple required>
+            </select>
+
+            <button>Guardar Equipo</button>
+        </form>
+    </main>
+
+    <script type="module" src="js/registro.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+[
+    {
+        "nombreEquipo": "Equipo Aurora",
+        "entrenador": "Ash",
+        "region": "Kanto",
+        "pokemons": [
+            {
+                "name": "pikachu",
+                "url": "https://pokeapi.co/api/v2/pokemon/pikachu"
+            },
+            {
+                "name": "charizard",
+                "url": "https://pokeapi.co/api/v2/pokemon/charizard"
+            }
+        ]
+    },
+    {
+        "nombreEquipo": "Equipo Fuego",
+        "entrenador": "Misty",
+        "region": "Johto",
+        "pokemons": [
+            {
+                "name": "charmander",
+                "url": "https://pokeapi.co/api/v2/pokemon/charmander"
+            },
+            {
+                "name": "vulpix",
+                "url": "https://pokeapi.co/api/v2/pokemon/vulpix"
+            }
+        ]
+    },
+    {
+        "nombreEquipo": "Equipo Naturaleza",
+        "entrenador": "Brock",
+        "region": "Hoenn",
+        "pokemons": [
+            {
+                "name": "bulbasaur",
+                "url": "https://pokeapi.co/api/v2/pokemon/bulbasaur"
+            },
+            {
+                "name": "sceptile",
+                "url": "https://pokeapi.co/api/v2/pokemon/sceptile"
+            }
+        ]
+    },
+    {
+        "nombreEquipo": "Equipo Tormenta",
+        "entrenador": "Serena",
+        "region": "Kalos",
+        "pokemons": [
+            {
+                "name": "greninja",
+                "url": "https://pokeapi.co/api/v2/pokemon/greninja"
+            },
+            {
+                "name": "lucario",
+                "url": "https://pokeapi.co/api/v2/pokemon/lucario"
+            }
+        ]
+    },
+    {
+        "nombreEquipo": "Equipo Leyenda",
+        "entrenador": "Red",
+        "region": "Alola",
+        "pokemons": [
+            {
+                "name": "mewtwo",
+                "url": "https://pokeapi.co/api/v2/pokemon/mewtwo"
+            },
+            {
+                "name": "dragonite",
+                "url": "https://pokeapi.co/api/v2/pokemon/dragonite"
+            }
+        ]
+    }
+]
