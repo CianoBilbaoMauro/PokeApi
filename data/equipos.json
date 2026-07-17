@@ -73,5 +73,50 @@
                 "url": "https://pokeapi.co/api/v2/pokemon/dragonite"
             }
         ]
+    },
+    {
+        "nombreEquipo": "Equipo Rival",
+        "entrenador": "Gary",
+        "region": "Kanto",
+        "pokemons": [
+            {
+                "name": "eevee",
+                "url": "https://pokeapi.co/api/v2/pokemon/eevee"
+            },
+            {
+                "name": "blastoise",
+                "url": "https://pokeapi.co/api/v2/pokemon/blastoise"
+            }
+        ]
+    },
+    {
+        "nombreEquipo": "Equipo Místico",
+        "entrenador": "Cynthia",
+        "region": "Sinnoh",
+        "pokemons": [
+            {
+                "name": "garchomp",
+                "url": "https://pokeapi.co/api/v2/pokemon/garchomp"
+            },
+            {
+                "name": "lucario",
+                "url": "https://pokeapi.co/api/v2/pokemon/lucario"
+            }
+        ]
+    },
+    {
+        "nombreEquipo": "Equipo Dragón",
+        "entrenador": "Lance",
+        "region": "Johto",
+        "pokemons": [
+            {
+                "name": "gyarados",
+                "url": "https://pokeapi.co/api/v2/pokemon/gyarados"
+            },
+            {
+                "name": "aerodactyl",
+                "url": "https://pokeapi.co/api/v2/pokemon/aerodactyl"
+            }
+        ]
     }
 ]

@@ -1,11 +1,12 @@
 import PokemonTeam from "./PokemonTeam.js";
 import { mostrarEquipos } from "./ui.js";
 import { obtenerDetallePokemon } from "./api.js";
-import { obtenerEquipos } from "./storage.js"; // Importamos tu lector de localStorage
+// SUMAMOS EL IMPORT DE LA FUNCIÓN PARA ELIMINAR
+import { obtenerEquipos, eliminarEquipoStorage } from "./storage.js"; 
 
 async function iniciar() {
     try {
-        // 1. Cargamos los 5 equipos precargados del JSON
+        // 1. Cargamos los equipos precargados del JSON
         const respuesta = await fetch("./data/equipos.json");
         const datosJson = await respuesta.json();
         const equiposCargados = [];
@@ -29,17 +30,16 @@ async function iniciar() {
         }
 
         // 2. Cargamos los equipos creados por el usuario desde localStorage
-        const datosStorage = obtenerEquipos(); // Esto ya nos devuelve un Array mapeado
+        const datosStorage = obtenerEquipos(); 
         const equiposCreados = [];
 
         for (const item of datosStorage) {
-            // Re-instanciamos como clase PokemonTeam por si el usuario necesita usar sus métodos
             equiposCreados.push(
                 new PokemonTeam(
                     item.nombreEquipo,
                     item.entrenador,
                     item.region,
-                    item.pokemons // Estos ya tienen sus detalles guardados de cuando se creó el equipo
+                    item.pokemons 
                 )
             );
         }
@@ -49,6 +49,18 @@ async function iniciar() {
 
         // 4. Los mandamos a la interfaz para que dibuje todas las cards juntas
         mostrarEquipos(todosLosEquipos);
+
+        // 5. ESCUCHAMOS EL CLIC EN EL BOTÓN DE ELIMINAR
+        document.addEventListener("click", (e) => {
+            if (e.target.classList.contains("btn-eliminar")) {
+                const nombreAEliminar = e.target.dataset.nombre;
+                
+                if (confirm(`¿Estás seguro de que querés eliminar el ${nombreAEliminar}?`)) {
+                    eliminarEquipoStorage(nombreAEliminar); // Lo saca del storage
+                    window.location.reload(); // Recarga para limpiar la pantalla
+                }
+            }
+        });
 
     } catch (error) {
         console.error("Error al iniciar la aplicación:", error);
